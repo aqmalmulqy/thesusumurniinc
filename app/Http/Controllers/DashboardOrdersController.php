@@ -12,21 +12,16 @@ class DashboardOrdersController extends Controller
 {
     public function index()
     {
-        $items = OrderItem::select('nama_product')
-            ->selectRaw('SUM(quantity) as total_quantity')
-            ->groupBy('nama_product')
-            ->get();
-
-        // dd($items);
         return view('orders.index', [
             'product' => Product::all(),
-            'order' => Orders::all()
+            'order' => Orders::paginate(5)
         ]);
     }
 
     public function laporan() {
         $items = OrderItem::select('nama_product')
             ->selectRaw('SUM(quantity) as total_quantity')
+            ->whereDate('created_at', now())
             ->groupBy('nama_product')
             ->get();
 
