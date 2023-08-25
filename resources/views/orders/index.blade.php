@@ -18,6 +18,14 @@
                             <td>{{ $orderItem->id }}</td>
                         </tr>
                         <tr>
+                            <th>No hp</th>
+                            <td>{{ $orderItem->nomor }}</td>
+                        </tr>
+                        <tr>
+                            <th>Alamat</th>
+                            <td>{{ $orderItem->alamat }}</td>
+                        </tr>
+                        <tr>
                             <th>Type Pembayaran</th>
                             <td>{{ $orderItem->bayar }}</td>
                             @if ($orderItem->bukti)
@@ -58,7 +66,7 @@
                                         @method('delete')
                                         @csrf
                                         <button class="btn btn-success" onclick="return confirm('Are You Sure?')">Konfirmasi
-                                            Pensanan</button>
+                                            Pesanan</button>
                                     </form>
                                 </td>
                             </tr>

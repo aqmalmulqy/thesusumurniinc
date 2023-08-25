@@ -48,10 +48,6 @@
                       <label for="password" class="form-label">Password</label>
                       <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
                     </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
                     <div class="mb-3 d-grid gap-3">
                         <button type="submit" class="btn btn-primary">LOGIN</button>
                     </div>

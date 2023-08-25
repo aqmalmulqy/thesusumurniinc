@@ -1,12 +1,14 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Exports\OrderItemExport;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Orders;
 use App\Models\OrderItem;
 use App\Models\Product;
 use Illuminate\Support\Facades\Storage;
+use Maatwebsite\Excel\Facades\Excel;
 
 class DashboardOrdersController extends Controller
 {
@@ -28,6 +30,11 @@ class DashboardOrdersController extends Controller
         // dd($items);
         return view('dashboard.laporan', compact('items'));
     }
+
+    public function export()
+{
+    return Excel::download(new OrderItemExport, 'order_items.xlsx');
+}
 
     public function create()
     {

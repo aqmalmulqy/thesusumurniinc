@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../css/product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>The Susumurni Inc | Product</title>
+    <title>The Susumurni Inc | Keranjang</title>
 </head>
 <body>
 {{-- Awal Navbar --}}
@@ -33,7 +33,7 @@
 </div>
 <div id="cart-contents">
     <div class="container mt-4">
-        <h1>Product List</h1>
+        <h1>Keranjang Pesanan</h1>
         <div class="table-responsive">
             <table class="table table-striped">
                 <thead>

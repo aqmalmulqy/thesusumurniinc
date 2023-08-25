@@ -53,6 +53,7 @@ Route::get('/dashboard/product/checkSlug', [DashboardProductController::class, '
 Route::resource('/dashboard/product', DashboardProductController::class)->middleware('auth');
 Route::resource('/dashboard/orders', DashboardOrdersController::class)->middleware('auth');
 Route::get('/dashboard/laporan', [DashboardOrdersController::class, 'laporan'])->middleware('auth');
+Route::get('/export/order-items', [DashboardOrdersController::class, 'export'])->name('export.order_items');
 Route::get('/orders/index', [DashboardOrdersController::class, 'index'])->name('orders.index');
 Route::resource('/orders', DashboardOrdersController::class);
 // Route::get('/product', function () {
