@@ -11,14 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('transaksis', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->string('total_qty');
-            $table->string('total_harga');
-            $table->string('nama_customer');
-            $table->string('alamat');
-            $table->string('no_tlp');
+            $table->string('nama');
+            $table->string('alamat')->unique();
+            $table->string('nomor');
+            $table->string('bayar');
+            $table->string('bukti');
             $table->timestamps();
+            $table->softDeletes(); // Menambahkan Soft Delete
         });
     }
 
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('transaksis');
+        Schema::dropIfExists('orders');
     }
 };

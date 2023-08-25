@@ -29,7 +29,7 @@
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
-        <a href="#contact">Kontak</a>
+        <a href="#alamat">Alamat</a>
       </div>
 
       </div>
@@ -71,7 +71,7 @@
       <main class="content">
         <h1>Nikmati Produk <span>The Susumurni Inc</span></h1>
         <p>Untuk rasa dan sensasi nikmat, The Susumurni Inc juaranya!</p>
-        <a href="/product" class="cta">Beli Sekarang</a>
+        <a href="/product/index" class="cta">Beli Sekarang</a>
       </main>
     </section>
     <!-- Hero Section end -->
@@ -100,10 +100,10 @@
     
 
     <!-- Contact Section start -->
-    <section id="contact" class="contact">
-      <h2><span>Kontak</span> Kami</h2>
+    <section id="alamat" class="alamat">
+      <h2><span>Alamat</span> Kami</h2>
       <div class="row">
-        <iframe
+        <iframe style="width: auto; height: 100vh;"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.690863164448!2d107.60554927384906!3d-6.927506193072252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e76e631fca5b%3A0x9a8cf358cb56bbdd!2sthe%20susumurni%20inc.!5e0!3m2!1sid!2sid!4v1689087579702!5m2!1sid!2sid"
           allowfullscreen=""
           loading="lazy"
@@ -111,25 +111,7 @@
           class="map"
         ></iframe>
 
-        <form action="">
-          <div class="input-group">
-            <i data-feather="user"></i>
-            <input type="text" placeholder="nama" />
-          </div>
-          <div class="input-group">
-            <i data-feather="mail"></i>
-            <input type="text" placeholder="email" />
-          </div>
-          <div class="input-group">
-            <i data-feather="phone"></i>
-            <input type="text" placeholder="no hp" />
-          </div>
-          <div class="input-group">
-            <i data-feather="file-text"></i>
-            <input type="text" placeholder="kritik & saran" />
-          </div>
-          <button type="submit" class="btn">kirim pesan</button>
-        </form>
+        
       </div>
     </section>
     <!-- Contact Section end -->
@@ -137,15 +119,13 @@
     <!-- Footer start -->
     <footer>
       <div class="socials">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="twitter"></i></a>
-        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="https://www.instagram.com/the.susumurni.inc/"><i data-feather="instagram"></i>My Instagram</a>
       </div>
 
       <div class="links">
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
-        <a href="#contact">Kontak</a>
+        <a href="#alamat">Alamat</a>
       </div>
 
       <div class="credit">
